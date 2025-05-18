@@ -3095,11 +3095,11 @@
 											},
 											"font": "Arial;30;1",
 											"parentStyle": true,
-											"left": 850.5,
+											"left": 852.5,
 											"top": 735.5,
-											"width": 169,
+											"width": 179,
 											"height": 30,
-											"text": "rent Bicycle"
+											"text": "Rent Bicycle"
 										},
 										{
 											"_type": "LabelView",
@@ -3133,9 +3133,9 @@
 									],
 									"font": "Arial;30;0",
 									"parentStyle": true,
-									"left": 845.5,
+									"left": 847.5,
 									"top": 728.5,
-									"width": 180.0830078125,
+									"width": 190.0732421875,
 									"height": 42,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGW3sXzgjjSIfQ="
@@ -3241,7 +3241,7 @@
 							"containerChangeable": true,
 							"left": 808,
 							"top": 720,
-							"width": 254,
+							"width": 268,
 							"height": 59,
 							"nameCompartment": {
 								"$ref": "AAAAAAGW3sXzgjjRm7s="
@@ -3489,7 +3489,7 @@
 									"font": "Arial;13;0",
 									"parentStyle": false,
 									"left": 537,
-									"top": 690,
+									"top": 689,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -3511,7 +3511,7 @@
 									"font": "Arial;13;0",
 									"parentStyle": false,
 									"left": 538,
-									"top": 675,
+									"top": 674,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -3533,7 +3533,7 @@
 									"font": "Arial;13;0",
 									"parentStyle": false,
 									"left": 534,
-									"top": 719,
+									"top": 718,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -3621,7 +3621,7 @@
 									"font": "Arial;13;0",
 									"parentStyle": false,
 									"left": 782,
-									"top": 713,
+									"top": 712,
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 30,
@@ -3642,7 +3642,7 @@
 									"font": "Arial;13;0",
 									"parentStyle": false,
 									"left": 781,
-									"top": 700,
+									"top": 699,
 									"height": 13,
 									"alpha": -0.7853981633974483,
 									"distance": 40,
@@ -3663,7 +3663,7 @@
 									"font": "Arial;13;0",
 									"parentStyle": false,
 									"left": 784,
-									"top": 741,
+									"top": 740,
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 25,
@@ -3711,7 +3711,7 @@
 								"$ref": "AAAAAAGW3r5BKYZJaBY="
 							},
 							"lineStyle": 1,
-							"points": "265:685;807:737",
+							"points": "265:685;807:736",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGW3sbjK0RHdUE="
@@ -4883,7 +4883,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "rent Bicycle"
+					"name": "Rent Bicycle"
 				},
 				{
 					"_type": "UMLUseCase",
