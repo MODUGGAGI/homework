@@ -1,0 +1,121 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.2.15 Chrome/134.0.6998.205 Electron/35.2.1 Safari/537.36" version="26.2.15">
+  <diagram name="페이지-1" id="YrGnkqJNx8R0_pJG_wuY">
+    <mxGraphModel dx="1370" dy="740" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="200" pageHeight="200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="aCNtm3d9xgUVQaLuDEn9-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-270" y="46.09" width="850" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="aCNtm3d9xgUVQaLuDEn9-2" value=":Member" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="-220" y="126.08500000000004" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aCNtm3d9xgUVQaLuDEn9-3" value=":RentBicycleUI" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-50" y="136.08500000000004" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aCNtm3d9xgUVQaLuDEn9-4" value=":RentBicycle" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="136.08500000000004" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aCNtm3d9xgUVQaLuDEn9-5" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="aCNtm3d9xgUVQaLuDEn9-3" target="aCNtm3d9xgUVQaLuDEn9-4" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="206.08500000000004" as="sourcePoint" />
+            <mxPoint x="150" y="156.08500000000004" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aCNtm3d9xgUVQaLuDEn9-6" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="aCNtm3d9xgUVQaLuDEn9-2" target="aCNtm3d9xgUVQaLuDEn9-3" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="206.08500000000004" as="sourcePoint" />
+            <mxPoint x="150" y="156.08500000000004" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aCNtm3d9xgUVQaLuDEn9-7" value=":BicycleCollection" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="136.08999999999997" width="115" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aCNtm3d9xgUVQaLuDEn9-8" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" source="aCNtm3d9xgUVQaLuDEn9-7" target="aCNtm3d9xgUVQaLuDEn9-4" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="110" y="206.08500000000004" as="sourcePoint" />
+            <mxPoint x="160" y="156.08500000000004" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aCNtm3d9xgUVQaLuDEn9-9" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="140" y="176.08500000000004" as="sourcePoint" />
+            <mxPoint x="74" y="176.08500000000004" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aCNtm3d9xgUVQaLuDEn9-12" value="1: startInterface()" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="44" y="186.08500000000004" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aCNtm3d9xgUVQaLuDEn9-13" value=":Bicycle" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="367.5" y="286.09" width="88" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aCNtm3d9xgUVQaLuDEn9-14" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="aCNtm3d9xgUVQaLuDEn9-7" target="aCNtm3d9xgUVQaLuDEn9-13" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="294" y="256.08500000000004" as="sourcePoint" />
+            <mxPoint x="344" y="206.08500000000004" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aCNtm3d9xgUVQaLuDEn9-15" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="74" y="135.41500000000005" as="sourcePoint" />
+            <mxPoint x="140" y="135.41500000000005" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aCNtm3d9xgUVQaLuDEn9-16" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-146" y="135.41500000000005" as="sourcePoint" />
+            <mxPoint x="-80" y="135.41500000000005" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aCNtm3d9xgUVQaLuDEn9-17" value="2: rentBicycle()" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-170" y="104.08500000000004" width="111" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aCNtm3d9xgUVQaLuDEn9-18" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="274" y="142.41500000000008" as="sourcePoint" />
+            <mxPoint x="340" y="142.41500000000008" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aCNtm3d9xgUVQaLuDEn9-19" value="2.1.1.1: getBicycleDetails" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="427" y="210" width="143" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aCNtm3d9xgUVQaLuDEn9-20" value="2.1: rentBicycle()" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="31" y="104.08500000000004" width="146" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aCNtm3d9xgUVQaLuDEn9-21" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="424" y="200.00500000000002" as="sourcePoint" />
+            <mxPoint x="424" y="260.00500000000005" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aCNtm3d9xgUVQaLuDEn9-22" value="2.1.1*[for all BicycleCollection&#39;s Bicycles]: findBicycle()" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="200.5" y="106.09" width="229.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aCNtm3d9xgUVQaLuDEn9-23" value="" style="shape=card;whiteSpace=wrap;html=1;rotation=90;direction=south;size=21;" vertex="1" parent="1">
+          <mxGeometry x="-214" y="-9.55" width="28.44" height="140.64" as="geometry" />
+        </mxCell>
+        <mxCell id="aCNtm3d9xgUVQaLuDEn9-24" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;Rent Bicycle&lt;/b&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-265" y="45.769999999999996" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aCNtm3d9xgUVQaLuDEn9-26" value=":User" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="166" y="286.09" width="88" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aCNtm3d9xgUVQaLuDEn9-27" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="aCNtm3d9xgUVQaLuDEn9-26" target="aCNtm3d9xgUVQaLuDEn9-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160" y="250" as="sourcePoint" />
+            <mxPoint x="210" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aCNtm3d9xgUVQaLuDEn9-29" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="221" y="200.00500000000002" as="sourcePoint" />
+            <mxPoint x="221" y="260.00500000000005" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aCNtm3d9xgUVQaLuDEn9-30" value="2.1.2: addBicycle" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="200.5" y="210" width="143" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
