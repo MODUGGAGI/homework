@@ -1,0 +1,42 @@
+### Kyungpyo Ignore template template
+# OS 관련
+.DS_Store
+Thumbs.db
+
+# IntelliJ / JetBrains
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# VSCode
+.vscode/
+
+# 빌드 디렉토리
+/build/
+target/
+
+# Gradle
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+build/
+
+# Maven
+/logs/
+*.log
+*.class
+*.jar
+*.war
+*.ear
+
+# 환경 설정
+.env
+.env.*
+
+# 테스트 리포트
+/test-output/
+
+# 기타
+node_modules/
+coverage/
