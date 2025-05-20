@@ -2603,11 +2603,11 @@
 											},
 											"font": "Arial;30;1",
 											"parentStyle": true,
-											"left": 806,
+											"left": 807.5,
 											"top": 327.5,
-											"width": 224,
+											"width": 233,
 											"height": 30,
-											"text": "RegisterBicycle"
+											"text": "Register Bicycle"
 										},
 										{
 											"_type": "LabelView",
@@ -2641,9 +2641,9 @@
 									],
 									"font": "Arial;30;0",
 									"parentStyle": true,
-									"left": 801,
+									"left": 802.5,
 									"top": 320.5,
-									"width": 235.1171875,
+									"width": 243.4521484375,
 									"height": 42,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGW3sSYjvkYKNo="
@@ -2749,7 +2749,7 @@
 							"containerChangeable": true,
 							"left": 752,
 							"top": 312,
-							"width": 332,
+							"width": 344,
 							"height": 59,
 							"nameCompartment": {
 								"$ref": "AAAAAAGW3sSYjvkXuo8="
@@ -2794,7 +2794,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"parentStyle": false,
-									"left": 510,
+									"left": 512,
 									"top": 396,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -2816,7 +2816,7 @@
 									"visible": null,
 									"font": "Arial;13;0",
 									"parentStyle": false,
-									"left": 507,
+									"left": 509,
 									"top": 381,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -2838,7 +2838,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"parentStyle": false,
-									"left": 515,
+									"left": 517,
 									"top": 425,
 									"height": 13,
 									"alpha": -1.5707963267948966,
@@ -2883,7 +2883,7 @@
 									"font": "Arial;13;0",
 									"parentStyle": false,
 									"left": 295,
-									"top": 422,
+									"top": 423,
 									"height": 13,
 									"alpha": 0.7853981633974483,
 									"distance": 40,
@@ -2926,7 +2926,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"parentStyle": false,
-									"left": 724,
+									"left": 728,
 									"top": 356,
 									"height": 13,
 									"alpha": -0.5235987755982988,
@@ -2947,7 +2947,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"parentStyle": false,
-									"left": 719,
+									"left": 724,
 									"top": 343,
 									"height": 13,
 									"alpha": -0.7853981633974483,
@@ -2968,7 +2968,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"parentStyle": false,
-									"left": 734,
+									"left": 737,
 									"top": 382,
 									"height": 13,
 									"alpha": 0.5235987755982988,
@@ -3017,7 +3017,7 @@
 								"$ref": "AAAAAAGW3r6YfotUqC8="
 							},
 							"lineStyle": 1,
-							"points": "273:462;753:372",
+							"points": "273:462;757:372",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGW3sS6IfpxMjE="
@@ -4875,7 +4875,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "RegisterBicycle"
+					"name": "Register Bicycle"
 				},
 				{
 					"_type": "UMLUseCase",
