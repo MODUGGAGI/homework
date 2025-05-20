@@ -40,3 +40,6 @@ build/
 # 기타
 node_modules/
 coverage/
+
+/cmake-build-debug/
+CMakeLists.txt
