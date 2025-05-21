@@ -26,4 +26,5 @@ void RentBicycleUI::rentBicycle(RentBicycle* control, const std::string& bicycle
     // 결과 출력
     auto details = bicycle->getBicycleDetails();
     out_fp << "4.1. 자전거 대여" << std::endl;
-    out_fp << "> " << details["bicycleId"] << " " << details["name"] << std::endl << st
+    out_fp << "> " << details["bicycleId"] << " " << details["name"] << std::endl << std::endl;
+}
