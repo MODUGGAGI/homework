@@ -6,8 +6,11 @@
 
 class Logout {
 public:
-    // 생성자에서 참조 매개변수를 통해 ID 전달 - added
-    Logout(User*& currentUser, std::string& userId);
+    // ✅ 생성자 변경
+    Logout(User*& currentUser);
+
+    // ✅ logout 메서드 추가
+    void logout(User*& currentUser, std::string& userId);
 };
 
 #endif

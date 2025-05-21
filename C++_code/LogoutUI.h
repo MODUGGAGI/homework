@@ -3,12 +3,16 @@
 
 #include "User.h"
 
+// ✅ 전방 선언 추가
+class Logout;
+
 extern std::ifstream in_fp;
 extern std::ofstream out_fp;
 
 class LogoutUI {
 public:
-    void startInterface(User*& currentUser);
+    // ✅ 매개변수 변경
+    void startInterface(Logout* control, User*& currentUser);
 };
 
 #endif
