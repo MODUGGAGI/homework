@@ -9,7 +9,7 @@
 #include "RegisterMemberUI.h"
 #include "LoginUI.h"
 #include "LogoutUI.h"
-//#include "RegisterBicycleUI.h"
+#include "RegisterBicycleUI.h"
 //#include "RentBicycleUI.h"
 //#include "ViewRentalInfoUI.h"
 
@@ -94,7 +94,9 @@ void doTask() {
             case 3: // 자전거 등록
                 switch (menu_level_2) {
                     case 1: {
-                        // 3.1 자전거 등록
+                        // 3.1 자전거 등록 - added
+                        RegisterBicycleUI ui;
+                        ui.startInterface(bicycleList, bicycleCount, currentUser);
                         break;
                     }
                 }
