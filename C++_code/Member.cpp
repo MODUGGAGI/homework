@@ -1,5 +1,4 @@
 #include "Member.h"
-#include <iostream>
 
 Member::Member() {}
 
