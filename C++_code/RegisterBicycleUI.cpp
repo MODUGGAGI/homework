@@ -7,20 +7,20 @@ void RegisterBicycleUI::startInterface(Bicycle* bicycleList[], int& bicycleCount
 
     std::string bicycleId, name;
 
-    // 입력 파일에서 자전거 정보 읽기 - added
+    // 입력 파일에서 자전거 정보 읽기
     in_fp >> bicycleId >> name;
 
-    // 자전거 등록 수행 - added
+    // 자전거 등록 수행
     registerNewBicycle(bicycleId, name, bicycleList, bicycleCount);
 }
 
 void RegisterBicycleUI::registerNewBicycle(const std::string& bicycleId, const std::string& name,
                                            Bicycle* bicycleList[], int& bicycleCount) {
-    // RegisterBicycle 컨트롤 객체 생성 - added
+    // RegisterBicycle 컨트롤 객체 생성
     RegisterBicycle control;
     control.registerNewBicycle(bicycleId, name, bicycleList, bicycleCount);
 
-    // 결과 출력 - added
+    // 결과 출력
     out_fp << "3.1. 자전거 등록" << std::endl;
     out_fp << "> " << bicycleId << " " << name << std::endl << std::endl;
 }
