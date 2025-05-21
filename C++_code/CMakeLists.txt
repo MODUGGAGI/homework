@@ -21,5 +21,7 @@ add_executable(C__code
         RegisterBicycle.cpp
         RentBicycleUI.cpp
         RentBicycle.cpp
+        ViewRentalInfoUI.cpp
+        ViewRentalInfo.cpp
         # 다른 필요한 소스 파일들
 )

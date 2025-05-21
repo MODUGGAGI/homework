@@ -11,7 +11,7 @@
 #include "LogoutUI.h"
 #include "RegisterBicycleUI.h"
 #include "RentBicycleUI.h"
-//#include "ViewRentalInfoUI.h"
+#include "ViewRentalInfoUI.h"
 
 using namespace std;
 
@@ -117,6 +117,8 @@ void doTask() {
                 switch (menu_level_2) {
                     case 1: {
                         // 5.1 자전거 대여 리스트
+                        ViewRentalInfoUI ui;
+                        ui.startInterface(currentUser);
                         break;
                     }
                 }
@@ -131,10 +133,6 @@ void doTask() {
                         break;
                     }
                 }
-                break;
-
-            default:
-                // 알 수 없는 메뉴
                 break;
         }
     }
