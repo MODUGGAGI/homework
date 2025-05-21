@@ -1,10 +1,5 @@
 #include "Login.h"
 #include "LoginUI.h"
-#include <iostream>
-#include <fstream>
-
-extern std::ifstream in_fp;
-extern std::ofstream out_fp;
 
 // ✅ 생성자 구현 추가
 Login::Login(User* userList[], int userCount, User*& currentUser) {
