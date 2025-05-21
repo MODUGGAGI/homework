@@ -22,8 +22,7 @@ using namespace std;
 
 // 함수 선언
 void doTask();
-void join();
-void program_exit();
+int program_exit();
 
 // 전역 변수 선언
 ifstream in_fp;
@@ -128,12 +127,16 @@ void doTask() {
                 switch (menu_level_2) {
                     case 1: {
                         // 6.1 종료
-                        out_fp << "6.1. 종료" << std::endl; // 출력 추가
-                        is_program_exit = 1;
+                        is_program_exit = program_exit();
                         break;
                     }
                 }
                 break;
         }
     }
+}
+
+int program_exit() {
+    out_fp << "6.1. 종료";
+    return 1;
 }
