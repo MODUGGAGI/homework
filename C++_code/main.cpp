@@ -3,12 +3,14 @@
 #include <string>
 #include <stdio.h>
 #include <string.h>
+#include "User.h"       // User 클래스 추가
+#include "Bicycle.h"    // Bicycle 클래스 추가
 #include "RegisterMemberUI.h"
-#include "LoginUI.h"
-#include "LogoutUI.h"
-#include "RegisterBicycleUI.h"
-#include "RentBicycleUI.h"
-#include "ViewRentalInfoUI.h"
+//#include "LoginUI.h"
+//#include "LogoutUI.h"
+//#include "RegisterBicycleUI.h"
+//#include "RentBicycleUI.h"
+//#include "ViewRentalInfoUI.h"
 
 using namespace std;
 
@@ -40,6 +42,13 @@ int main() {
 }
 
 void doTask() {
+
+    User* userList[50]; // 사용자 저장
+    Bicycle* bicycleList[50]; // 자전거 저장
+    User* currentUser = nullptr; // 현재 로그인 한 사용자
+    int userCount = 0; // 사용자 수
+    int bicycleCount = 0; // 자전거 수
+
     int menu_level_1 = 0, menu_level_2 = 0;
     int is_program_exit = 0;
 
@@ -53,7 +62,8 @@ void doTask() {
                 switch (menu_level_2) {
                     case 1: {
                         // 1.1 회원가입
-                        join();
+                        RegisterMemberUI ui;
+                        ui.startInterface(userList, userCount);
                         break;
                     }
                 }
