@@ -1,6 +1,7 @@
 #include "ViewRentalInfo.h"
 
-std::vector<Bicycle*> ViewRentalInfo::viewRentalInfo(Member* member) {
-    // 회원의 자전거 목록 반환 - added
-    return member->listBicycles();
+// 생성자에서 Member의 자전거 목록을 참조 매개변수에 저장 - added
+ViewRentalInfo::ViewRentalInfo(Member* member, std::vector<Bicycle*>& bicycles) {
+    // 회원의 자전거 목록을 참조 매개변수에 할당
+    bicycles = member->listBicycles();
 }

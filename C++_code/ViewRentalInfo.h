@@ -7,7 +7,8 @@
 
 class ViewRentalInfo {
 public:
-    std::vector<Bicycle*> viewRentalInfo(Member* member);
+    // 생성자에서 참조 매개변수를 통해 자전거 목록 반환 - added
+    ViewRentalInfo(Member* member, std::vector<Bicycle*>& bicycles);
 };
 
 #endif
