@@ -1,17 +1,15 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include <stdio.h>
-#include <string.h>
-#include "User.h"       // User 클래스 추가
-#include "Bicycle.h"    // Bicycle 클래스 추가
-#include "Admin.h"      // Admin 클래스 추가
-#include "RegisterMemberUI.h"
-#include "LoginUI.h"
-#include "LogoutUI.h"
-#include "RegisterBicycleUI.h"
-#include "RentBicycleUI.h"
-#include "ViewRentalInfoUI.h"
+#include "User.h"               // User 클래스 추가
+#include "Bicycle.h"            // Bicycle 클래스 추가
+#include "Admin.h"              // Admin 클래스 추가
+#include "RegisterMemberUI.h"   // RegisterMemberUI 클래스 추가
+#include "LoginUI.h"            // LoginUI 클래스 추가
+#include "LogoutUI.h"           // LogoutUI 클래스 추가
+#include "RegisterBicycleUI.h"  // RegisterBicycleUI 클래스 추가
+#include "RentBicycleUI.h"      // RentBicycleUI 클래스 추가
+#include "ViewRentalInfoUI.h"   // ViewRentalInfoUI 클래스 추가
 
 using namespace std;
 
@@ -49,7 +47,7 @@ void doTask() {
     int userCount = 0; // 사용자 수
     int bicycleCount = 0; // 자전거 수
 
-    // 관리자 계정 추가 (Admin 객체 생성)
+    // 관리자 계정 추가 (Admin 객체 생성), 관리자 객체는 기본으로 제공되어야 하기 때문
     Admin* adminUser = new Admin("admin", "admin");
     userList[userCount++] = adminUser;
 
