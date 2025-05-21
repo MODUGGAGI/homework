@@ -5,6 +5,7 @@
 #include "Bicycle.h"            // Bicycle 클래스 추가
 #include "Admin.h"              // Admin 클래스 추가
 #include "RegisterMemberUI.h"   // RegisterMemberUI 클래스 추가
+#include "RegisterMember.h"   // RegisterMemberUI 클래스 추가
 #include "LoginUI.h"            // LoginUI 클래스 추가
 #include "LogoutUI.h"           // LogoutUI 클래스 추가
 #include "RegisterBicycleUI.h"  // RegisterBicycleUI 클래스 추가
@@ -64,8 +65,7 @@ void doTask() {
                 switch (menu_level_2) {
                     case 1: {
                         // 1.1 회원가입
-                        RegisterMemberUI ui;
-                        ui.startInterface(userList, userCount);
+                        RegisterMember rm(userList, userCount);
                         break;
                     }
                 }
@@ -75,13 +75,13 @@ void doTask() {
                 switch (menu_level_2) {
                     case 1: {
                         // 2.1 로그인
-                        LoginUI ui;
+                        LoginUI ui; //boundary 클래스, LoginUI 생성
                         ui.startInterface(userList, userCount, currentUser);
                         break;
                     }
                     case 2: {
                         // 2.2 로그아웃
-                        LogoutUI ui;
+                        LogoutUI ui; //boundary 클래스, LogoutUI 생성
                         ui.startInterface(currentUser);
                         break;
                     }
@@ -92,7 +92,7 @@ void doTask() {
                 switch (menu_level_2) {
                     case 1: {
                         // 3.1 자전거 등록
-                        RegisterBicycleUI ui;
+                        RegisterBicycleUI ui; //boundary 클래스, RegisterBicycleUI 생성
                         ui.startInterface(bicycleList, bicycleCount, currentUser);
                         break;
                     }
@@ -103,7 +103,7 @@ void doTask() {
                 switch (menu_level_2) {
                     case 1: {
                         // 4.1 자전거 대여
-                        RentBicycleUI ui;
+                        RentBicycleUI ui; //boundary 클래스, RentBicycleUI 생성
                         ui.startInterface(bicycleList, bicycleCount, currentUser);
                         break;
                     }
@@ -114,7 +114,7 @@ void doTask() {
                 switch (menu_level_2) {
                     case 1: {
                         // 5.1 자전거 대여 리스트
-                        ViewRentalInfoUI ui;
+                        ViewRentalInfoUI ui; //boundary 클래스, ViewRentalInfoUI 생성
                         ui.startInterface(currentUser);
                         break;
                     }
