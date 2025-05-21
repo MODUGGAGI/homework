@@ -19,4 +19,5 @@ void Member::rentBicycle(const Bicycle& bike) {
 }
 
 std::vector<Bicycle*> Member::listBicycles() const {
+    return bicycleCollection.getAllBicyclePointers();
 }
