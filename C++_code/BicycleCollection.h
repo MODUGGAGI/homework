@@ -9,7 +9,7 @@ private:
     std::vector<Bicycle> bicycles;
 
 public:
-    void addBicycle(const Bicycle& bike);
+    void addBicycle(const Bicycle& bicycle);
     std::vector<Bicycle*> getAllBicyclePointers() const;
 };
 
