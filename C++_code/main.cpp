@@ -5,9 +5,10 @@
 #include <string.h>
 #include "User.h"       // User 클래스 추가
 #include "Bicycle.h"    // Bicycle 클래스 추가
+#include "Admin.h"      // Admin 클래스 추가
 #include "RegisterMemberUI.h"
-//#include "LoginUI.h"
-//#include "LogoutUI.h"
+#include "LoginUI.h"
+#include "LogoutUI.h"
 //#include "RegisterBicycleUI.h"
 //#include "RentBicycleUI.h"
 //#include "ViewRentalInfoUI.h"
@@ -49,6 +50,10 @@ void doTask() {
     int userCount = 0; // 사용자 수
     int bicycleCount = 0; // 자전거 수
 
+    // 관리자 계정 추가 (Admin 객체 생성)
+    Admin* adminUser = new Admin("admin", "admin");
+    userList[userCount++] = adminUser;
+
     int menu_level_1 = 0, menu_level_2 = 0;
     int is_program_exit = 0;
 
@@ -73,10 +78,14 @@ void doTask() {
                 switch (menu_level_2) {
                     case 1: {
                         // 2.1 로그인
+                        LoginUI ui;
+                        ui.startInterface(userList, userCount, currentUser);
                         break;
                     }
                     case 2: {
                         // 2.2 로그아웃
+                        LogoutUI ui;
+                        ui.startInterface(currentUser);
                         break;
                     }
                 }
@@ -113,6 +122,7 @@ void doTask() {
                 switch (menu_level_2) {
                     case 1: {
                         // 6.1 종료
+                        out_fp << "6.1. 종료" << std::endl; // 출력 추가
                         is_program_exit = 1;
                         break;
                     }
