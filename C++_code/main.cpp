@@ -10,7 +10,7 @@
 #include "LoginUI.h"
 #include "LogoutUI.h"
 #include "RegisterBicycleUI.h"
-//#include "RentBicycleUI.h"
+#include "RentBicycleUI.h"
 //#include "ViewRentalInfoUI.h"
 
 using namespace std;
@@ -94,7 +94,7 @@ void doTask() {
             case 3: // 자전거 등록
                 switch (menu_level_2) {
                     case 1: {
-                        // 3.1 자전거 등록 - added
+                        // 3.1 자전거 등록
                         RegisterBicycleUI ui;
                         ui.startInterface(bicycleList, bicycleCount, currentUser);
                         break;
@@ -106,6 +106,8 @@ void doTask() {
                 switch (menu_level_2) {
                     case 1: {
                         // 4.1 자전거 대여
+                        RentBicycleUI ui;
+                        ui.startInterface(bicycleList, bicycleCount, currentUser);
                         break;
                     }
                 }

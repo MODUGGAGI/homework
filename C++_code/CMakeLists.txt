@@ -19,5 +19,7 @@ add_executable(C__code
         Logout.cpp
         RegisterBicycleUI.cpp
         RegisterBicycle.cpp
+        RentBicycleUI.cpp
+        RentBicycle.cpp
         # 다른 필요한 소스 파일들
 )
