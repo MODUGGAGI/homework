@@ -21,5 +21,5 @@ void RegisterMemberUI::registerNewMember(const std::string& id, const std::strin
 
     // 결과 출력
     out_fp << "1.1. 회원가입" << std::endl;
-    out_fp << "> " << id << " " << password << " " << phoneNumber << std::endl;
+    out_fp << "> " << id << " " << password << " " << phoneNumber << std::endl << std::endl;
 }
