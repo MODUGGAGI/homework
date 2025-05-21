@@ -3,22 +3,23 @@
 #include <iostream>
 #include <fstream>
 
-void RegisterBicycleUI::startInterface(Bicycle* bicycleList[], int& bicycleCount, User* currentUser) {
-
+// ✅ 매개변수 변경
+void RegisterBicycleUI::startInterface(RegisterBicycle* control, Bicycle* bicycleList[], int& bicycleCount, User* currentUser) {
     std::string bicycleId, name;
 
     // 입력 파일에서 자전거 정보 읽기
     in_fp >> bicycleId >> name;
 
     // 자전거 등록 수행
-    registerNewBicycle(bicycleId, name, bicycleList, bicycleCount);
+    // ✅ 매개변수 변경
+    registerNewBicycle(control, bicycleId, name, bicycleList, bicycleCount);
 }
 
-void RegisterBicycleUI::registerNewBicycle(const std::string& bicycleId, const std::string& name,
+// ✅ 매개변수 변경
+void RegisterBicycleUI::registerNewBicycle(RegisterBicycle* control, const std::string& bicycleId, const std::string& name,
                                            Bicycle* bicycleList[], int& bicycleCount) {
-    // RegisterBicycle 컨트롤 객체 생성
-    RegisterBicycle control;
-    control.registerNewBicycle(bicycleId, name, bicycleList, bicycleCount);
+    // ✅ RegisterBicycle 객체를 생성하지 않고 매개변수로 받은 객체 사용
+    control->registerNewBicycle(bicycleId, name, bicycleList, bicycleCount);
 
     // 결과 출력
     out_fp << "3.1. 자전거 등록" << std::endl;
