@@ -19,8 +19,8 @@ using namespace std;
 #define OUTPUT_FILE_NAME "output.txt"
 
 // 함수 선언
-void doTask();
-int program_exit();
+void doTask(); // 메뉴 파싱을 통해 사용자 요청을 처리하는 메인 작업 함수
+int program_exit(); // 프로그램 종료를 처리하고 종료 메시지를 출력
 
 // 전역 변수 선언
 ifstream in_fp;
@@ -64,7 +64,7 @@ void doTask() {
                 switch (menu_level_2) {
                     case 1: {
                         // 1.1 회원가입
-                        RegisterMember rm(userList, userCount);
+                        RegisterMember registerMemberControlClass(userList, userCount);
                         break;
                     }
                 }
@@ -74,14 +74,12 @@ void doTask() {
                 switch (menu_level_2) {
                     case 1: {
                         // 2.1 로그인
-                        // ✅ 변경 - Control 객체 생성 패턴으로 수정
-                        Login control(userList, userCount, currentUser);
+                        Login loginControlClass(userList, userCount, currentUser);
                         break;
                     }
                     case 2: {
                         // 2.2 로그아웃
-                        // ✅ 변경 - Control 객체 생성 패턴으로 수정
-                        Logout control(currentUser);
+                        Logout logoutControlClass(currentUser);
                         break;
                     }
                 }
@@ -91,8 +89,7 @@ void doTask() {
                 switch (menu_level_2) {
                     case 1: {
                         // 3.1 자전거 등록
-                        // ✅ 변경 - Control 객체 생성 패턴으로 수정
-                        RegisterBicycle control(bicycleList, bicycleCount, currentUser);
+                        RegisterBicycle registerBicycleControlClass(bicycleList, bicycleCount);
                         break;
                     }
                 }
@@ -102,8 +99,7 @@ void doTask() {
                 switch (menu_level_2) {
                     case 1: {
                         // 4.1 자전거 대여
-                        // ✅ 변경 - Control 객체 생성 패턴으로 수정
-                        RentBicycle control(bicycleList, bicycleCount, currentUser);
+                        RentBicycle rentBicycleControlClass(bicycleList, bicycleCount, currentUser);
                         break;
                     }
                 }
@@ -113,8 +109,7 @@ void doTask() {
                 switch (menu_level_2) {
                     case 1: {
                         // 5.1 자전거 대여 리스트
-                        // ✅ 변경 - Control 객체 생성 패턴으로 수정
-                        ViewRentalInfo control(currentUser);
+                        ViewRentalInfo viewRentalInfoControlClass(currentUser);
                         break;
                     }
                 }
