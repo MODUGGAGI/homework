@@ -9,7 +9,7 @@
 class Member : public User {
 private:
     std::string phoneNumber; // Member 전화번호
-    BicycleCollection bicycleCollection; // Member의 대여한 자전거 컬렉션
+    BicycleCollection rentalBicycleCollection; // Member의 대여한 자전거 컬렉션
 
 public:
     Member(const std::string& id, const std::string& pw, const std::string& phoneNum);

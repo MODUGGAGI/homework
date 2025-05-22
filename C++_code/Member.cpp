@@ -30,7 +30,7 @@ std::map<std::string, std::string> Member::getUserDetails() const {
 	반환값    : 없음
 */
 void Member::rentBicycle(const Bicycle& bicycle) {
-    bicycleCollection.addBicycle(bicycle);
+    rentalBicycleCollection.addBicycle(bicycle);
 }
 
 /*
@@ -40,5 +40,5 @@ void Member::rentBicycle(const Bicycle& bicycle) {
 	반환값    : vector<Bicycle*> -> 대여한 자전거 포인터 목록
 */
 std::vector<Bicycle*> Member::listBicycles() const {
-    return bicycleCollection.getAllBicyclePointers();
+    return rentalBicycleCollection.getAllBicyclePointers();
 }
