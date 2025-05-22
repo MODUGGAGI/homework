@@ -2,17 +2,17 @@
 #define VIEW_RENTAL_INFO_H
 
 #include "Member.h"
-#include <vector>
+#include <map>
 #include "Bicycle.h"
-#include "User.h"
+#include "Member.h"
 
 class ViewRentalInfo {
 public:
-    // ✅ 생성자 수정
+    // ViewRentalInfo 클래스의 생성자로 UI를 통해 대여 정보 조회 시작
     ViewRentalInfo(User* currentUser);
 
-    // ✅ 메서드 추가
-    void viewRentalInfo(Member* member, std::vector<Bicycle*>& bicycles);
+    // 회원의 대여 자전거 목록을 조회하여 반환
+    std::map<std::string, std::map<std::string, std::string>> viewRentalInfo(Member* member, std::vector<Bicycle*>& bicycles);
 };
 
 #endif
