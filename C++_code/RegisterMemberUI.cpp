@@ -26,7 +26,7 @@ void RegisterMemberUI::startInterface(RegisterMember* control, User* userList[],
 */
 void RegisterMemberUI::registerNewMember(RegisterMember* control, const std::string& id, const std::string& password,
                                          const std::string& phoneNumber, User* userList[], int& userCount) {
-    // Control 클래스의 registerNewMember 호출
+    // Control 클래스의 registerNewMember() 호출
     auto map = control->registerNewMember(id, password, phoneNumber, userList,userCount);
 
     // 결과 출력
