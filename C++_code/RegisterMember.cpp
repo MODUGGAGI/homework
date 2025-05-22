@@ -29,6 +29,6 @@ std::map<std::string, std::string> RegisterMember::registerNewMember(const std::
     // Member 객체 저장
     userList[userCount++] = newMember;
 
-    // Member 객체의 getUserDetails() 호출
+    // Member 객체의 getUserDetails() 호출해서 반환
     return newMember->getUserDetails();
 }
