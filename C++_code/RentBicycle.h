@@ -7,11 +7,11 @@
 
 class RentBicycle {
 public:
-    // ✅ 생성자 추가
-    RentBicycle(Bicycle* bicycleList[], int bicycleCount, User* currentUser);
+    // RentBicycle 클래스의 생성자로 UI를 통해 자전거 대여 프로세스를 시작
+    RentBicycle(Bicycle* bicycleList[], int bicycleCount, Member* currentUser);
 
-    // 기존 메서드 유지
-    Bicycle* rentBicycle(const std::string& bicycleId, Bicycle* bicycleList[], int bicycleCount, Member* member);
+    // 자전거 ID를 통해 자전거를 찾아 회원에게 대여 처리
+    std::map<std::string, std::string> rentBicycle(const std::string& bicycleId, Bicycle* bicycleList[], int bicycleCount, Member* currentUser);
 };
 
 #endif

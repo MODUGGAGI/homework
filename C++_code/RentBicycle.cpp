@@ -1,23 +1,40 @@
 #include "RentBicycle.h"
 #include "RentBicycleUI.h"
 
-// ✅ 생성자 구현 추가
-RentBicycle::RentBicycle(Bicycle* bicycleList[], int bicycleCount, User* currentUser) {
+/*
+	함수 이름 : RentBicycle::RentBicycle()
+	기능	  : RentBicycle 클래스의 생성자로 UI를 통해 자전거 대여 프로세스를 시작
+	전달 인자 : bicycleList -> 자전거 목록, bicycleCount -> 자전거 수, currentUser -> 현재 로그인된 사용자
+	반환값    : 없음
+*/
+RentBicycle::RentBicycle(Bicycle* bicycleList[], int bicycleCount, Member* currentUser) {
     // UI 객체 생성
     RentBicycleUI ui;
     // startInterface 호출
     ui.startInterface(this, bicycleList, bicycleCount, currentUser);
 }
 
-Bicycle* RentBicycle::rentBicycle(const std::string& bicycleId, Bicycle* bicycleList[], int bicycleCount, Member* member) {
+/*
+	함수 이름 : RentBicycle::rentBicycle()
+	기능	  : 자전거 ID를 통해 자전거를 찾아 회원에게 대여 처리
+	전달 인자 : bicycleId -> 자전거 ID, bicycleList -> 자전거 목록, bicycleCount -> 자전거 수, currentUser -> 대여할 회원
+	반환값    : Bicycle* -> 대여된 자전거 객체(실패시 nullptr)
+*/
+std::map<std::string, std::string> RentBicycle::rentBicycle(const std::string& bicycleId, Bicycle* bicycleList[], int bicycleCount, Member* currentUser) {
     // 자전거 목록에서 ID를 이용하여 자전거 찾기
     for (int i = 0; i < bicycleCount; i++) {
-        auto details = bicycleList[i]->getBicycleDetails();
-        if (details["bicycleId"] == bicycleId) {
-            // 자전거를 찾았으면 멤버의 rentBicycle 메서드 호출
-            member->rentBicycle(*bicycleList[i]);
-            return bicycleList[i];
+        // 자전거의 정보를 가져와서 map에 담아둔다.
+        auto map = bicycleList[i]->getBicycleDetails();
+
+        if (map["bicycleId"] == bicycleId) { //ID값 비교
+            // 자전거를 찾았으면 멤버의 rentBicycle 메서드 호출해서 대여
+            currentUser->rentBicycle(*bicycleList[i]);
+
+            // 대여한 자전거의 세부 정보를 담고 있는 map 반환
+            return map;
         }
     }
-    return nullptr;
+
+    // 예외 처리는 없다고 했지만, 함수 구조를 위해  모든 for문이 끝난 후 빈 map 반환처리
+    return std::map<std::string, std::string>();
 }
