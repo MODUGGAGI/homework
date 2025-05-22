@@ -12,8 +12,8 @@ private:
     BicycleCollection rentalBicycleCollection; // Member의 대여한 자전거 컬렉션
 
 public:
-    Member(const std::string& id, const std::string& pw, const std::string& phoneNum);
-    // Member 클래스의 생성자, 매개변수 -> id: Member ID, pw: 비밀번호, phoneNum: 전화번호
+    Member(const std::string& id, const std::string& password, const std::string& phoneNum);
+    // Member 클래스의 생성자, 매개변수 -> id: Member ID, password: 비밀번호, phoneNum: 전화번호
 
     virtual std::map<std::string, std::string> getUserDetails() const; // Member의 상세 정보를 반환, User의 순수 가상 함수 구현
     void rentBicycle(const Bicycle& bicycle); // 자전거를 대여하여 컬렉션에 추가 -> bicycle: 대여할 자전거 객체

@@ -3,11 +3,11 @@
 /*
 	함수 이름 : Admin::Admin()
 	기능	  : Admin 클래스의 매개변수 생성자로 관리자 ID와 비밀번호를 초기화
-	전달 인자 : id -> 관리자 ID, pw -> 비밀번호
+	전달 인자 : id -> 관리자 ID, password -> 비밀번호
 	반환값    : 없음
 */
-Admin::Admin(const std::string& id, const std::string& pw)
-        : User(id, pw) {}
+Admin::Admin(const std::string& id, const std::string& password)
+        : User(id, password) {}
 
 /*
 함수 이름 : Admin::getUserDetails()

@@ -3,10 +3,10 @@
 /*
 	함수 이름 : User::User()
 	기능	  : User 클래스의 매개변수 생성자로 사용자 ID와 비밀번호를 초기화
-	전달 인자 : id -> 사용자 ID, pw -> 비밀번호
+	전달 인자 : id -> 사용자 ID, password -> 비밀번호
 	반환값    : 없음
 */
-User::User(const std::string& id, const std::string& pw) : userId(id), password(pw) {}
+User::User(const std::string& id, const std::string& password) : userId(id), password(password) {}
 
 /*
 	함수 이름 : User::getUserId()

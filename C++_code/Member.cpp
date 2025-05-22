@@ -3,11 +3,11 @@
 /*
 	함수 이름 : Member::Member()
 	기능	  : Member 클래스의 매개변수 생성자로 사용자 ID, 비밀번호, 전화번호를 초기화
-	전달 인자 : id -> Member ID, pw -> 비밀번호, phoneNum -> 전화번호
+	전달 인자 : id -> Member ID, password -> 비밀번호, phoneNum -> 전화번호
 	반환값    : 없음
 */
-Member::Member(const std::string& id, const std::string& pw, const std::string& phoneNum)
-        : User(id, pw), phoneNumber(phoneNum) {}
+Member::Member(const std::string& id, const std::string& password, const std::string& phoneNum)
+        : User(id, password), phoneNumber(phoneNum) {}
 
 /*
 	함수 이름 : Member::getUserDetails()

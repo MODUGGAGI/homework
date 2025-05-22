@@ -10,7 +10,7 @@ protected:
     std::string password; // 사용자 비밀번호
 
 public:
-    User(const std::string& id, const std::string& pw); // User 클래스의 생성자, 매개변수 -> id: 사용자 ID, pw: 비밀번호
+    User(const std::string& id, const std::string& password); // User 클래스의 생성자, 매개변수 -> id: 사용자 ID, password: 비밀번호
 
     std::string getUserId() const; // 사용자 ID를 반환
     std::string getPassword() const; // 사용자 비밀번호를 반환
