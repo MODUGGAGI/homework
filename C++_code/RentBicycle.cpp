@@ -7,18 +7,22 @@
 	전달 인자 : bicycleList -> 자전거 목록, bicycleCount -> 자전거 수, currentUser -> 현재 로그인된 사용자
 	반환값    : 없음
 */
-RentBicycle::RentBicycle(Bicycle* bicycleList[], int bicycleCount, Member* currentUser) {
+RentBicycle::RentBicycle(Bicycle* bicycleList[], int bicycleCount, User* currentUser) {
+    //현재 로그인한 유저 Member로 다운 캐스팅
+    Member* currentMember = dynamic_cast<Member*>(currentUser);
+
     // UI 객체 생성
     RentBicycleUI ui;
+
     // startInterface 호출
-    ui.startInterface(this, bicycleList, bicycleCount, currentUser);
+    ui.startInterface(this, bicycleList, bicycleCount, currentMember);
 }
 
 /*
 	함수 이름 : RentBicycle::rentBicycle()
 	기능	  : 자전거 ID를 통해 자전거를 찾아 회원에게 대여 처리
 	전달 인자 : bicycleId -> 자전거 ID, bicycleList -> 자전거 목록, bicycleCount -> 자전거 수, currentUser -> 대여할 회원
-	반환값    : Bicycle* -> 대여된 자전거 객체(실패시 nullptr)
+	반환값    : std::map<std::string, std::string> -> 대여된 자전거 객체의 Details 정보를 담은 Map
 */
 std::map<std::string, std::string> RentBicycle::rentBicycle(const std::string& bicycleId, Bicycle* bicycleList[], int bicycleCount, Member* currentUser) {
     // 자전거 목록에서 ID를 이용하여 자전거 찾기
