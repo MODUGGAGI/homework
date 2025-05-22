@@ -12,7 +12,7 @@ extern std::ofstream out_fp; // main의 입력값을 받아오기 위한 외부 
 
 class ViewRentalInfoUI {
 public:
-    void startInterface(ViewRentalInfo* control, Member* currentUser); // 대여 정보 조회 UI 인터페이스, 대여 정보 조회를 처리하고 수행 결과 출력
+    void startInterface(Member *currentUser, std::map<std::string, std::map<std::string, std::string>> rentalMap); // 대여 정보 조회 UI 인터페이스, 대여 정보 조회를 처리하고 수행 결과 출력
 };
 
 #endif

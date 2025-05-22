@@ -9,12 +9,7 @@
 	전달 인자 : control -> ViewRentalInfo 컨트롤 객체, currentUser -> 현재 로그인된 사용자
 	반환값    : 없음
 */
-void ViewRentalInfoUI::startInterface(ViewRentalInfo* control, Member* currentUser) {
-    // 자전거 목록을 저장할 변수
-    std::vector<Bicycle*> bicycles;
-
-    // Control 클래스의 viewRentalInfo() 호출
-    auto rentalMap = control->viewRentalInfo(currentUser,bicycles);
+void ViewRentalInfoUI::startInterface(Member* currentUser, std::map<std::string, std::map<std::string, std::string>> rentalMap) {
 
     // 결과 출력
     out_fp << "5.1. 자전거 대여 리스트" << std::endl;
