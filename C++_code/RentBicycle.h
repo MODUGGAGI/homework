@@ -1,9 +1,10 @@
 #ifndef RENT_BICYCLE_H
 #define RENT_BICYCLE_H
 
+#include <map>
+#include <string>
 #include "Bicycle.h"
 #include "Member.h"
-#include <string>
 
 class RentBicycle {
 public:

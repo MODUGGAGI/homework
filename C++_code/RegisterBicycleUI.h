@@ -1,9 +1,10 @@
 #ifndef REGISTER_BICYCLE_UI_H
 #define REGISTER_BICYCLE_UI_H
 
+#include <fstream>
 #include <string>
-#include "User.h"
 #include "Bicycle.h"
+#include "User.h"
 
 // 전방 선언
 class RegisterBicycle;

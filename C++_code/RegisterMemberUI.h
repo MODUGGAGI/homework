@@ -1,9 +1,9 @@
 #ifndef REGISTER_MEMBER_UI_H
 #define REGISTER_MEMBER_UI_H
 
+#include <fstream>
 #include <string>
 #include "User.h"
-#include <fstream>
 
 // 전방 선언
 class RegisterMember;

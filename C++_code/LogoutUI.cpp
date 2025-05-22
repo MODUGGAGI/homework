@@ -1,7 +1,6 @@
-#include "LogoutUI.h"
-#include "Logout.h"
 #include <iostream>
-#include <fstream>
+#include "Logout.h"
+#include "LogoutUI.h"
 
 /*
 	함수 이름 : LogoutUI::startInterface()

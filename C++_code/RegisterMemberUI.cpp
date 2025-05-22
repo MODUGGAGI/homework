@@ -1,6 +1,6 @@
-#include "RegisterMemberUI.h"
-#include "RegisterMember.h"
 #include <iostream>
+#include "RegisterMember.h"
+#include "RegisterMemberUI.h"
 
 /*
 	함수 이름 : RegisterMemberUI::startInterface()

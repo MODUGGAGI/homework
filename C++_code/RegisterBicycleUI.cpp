@@ -1,7 +1,6 @@
-#include "RegisterBicycleUI.h"
-#include "RegisterBicycle.h"
 #include <iostream>
-#include <fstream>
+#include "RegisterBicycle.h"
+#include "RegisterBicycleUI.h"
 
 /*
 	함수 이름 : RegisterBicycleUI::startInterface()

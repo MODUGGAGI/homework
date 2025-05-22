@@ -1,6 +1,7 @@
 #ifndef LOGIN_UI_H
 #define LOGIN_UI_H
 
+#include <fstream>
 #include <string>
 #include "User.h"
 

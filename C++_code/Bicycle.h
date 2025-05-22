@@ -1,8 +1,8 @@
 #ifndef BICYCLE_H
 #define BICYCLE_H
 
-#include <string>
 #include <map>
+#include <string>
 
 class Bicycle {
 private:

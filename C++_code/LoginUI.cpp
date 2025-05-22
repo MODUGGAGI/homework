@@ -1,7 +1,6 @@
-#include "LoginUI.h"
-#include "Login.h"
 #include <iostream>
-#include <fstream>
+#include "Login.h"
+#include "LoginUI.h"
 
 /*
 	함수 이름 : LoginUI::startInterface()

@@ -1,8 +1,8 @@
 #ifndef LOGOUT_H
 #define LOGOUT_H
 
-#include "User.h"
 #include <string>
+#include "User.h"
 
 class Logout {
 public:

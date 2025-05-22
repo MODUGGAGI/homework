@@ -1,6 +1,7 @@
 #ifndef VIEW_RENTAL_INFO_UI_H
 #define VIEW_RENTAL_INFO_UI_H
 
+#include <fstream>
 #include "Member.h"
 
 // 전방 선언

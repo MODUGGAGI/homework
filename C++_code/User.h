@@ -1,8 +1,8 @@
 #ifndef C__CODE_USER_H
 #define C__CODE_USER_H
 
-#include <string>
 #include <map>
+#include <string>
 
 class User {
 protected:

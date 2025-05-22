@@ -1,6 +1,7 @@
 #ifndef LOGOUT_UI_H
 #define LOGOUT_UI_H
 
+#include <fstream>
 #include "User.h"
 
 // 전방 선언

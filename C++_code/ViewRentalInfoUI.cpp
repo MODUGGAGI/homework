@@ -1,8 +1,7 @@
-#include "ViewRentalInfoUI.h"
-#include "ViewRentalInfo.h"
-#include "Member.h"
 #include <iostream>
-#include <fstream>
+#include "Member.h"
+#include "ViewRentalInfo.h"
+#include "ViewRentalInfoUI.h"
 
 /*
 	함수 이름 : ViewRentalInfoUI::startInterface()

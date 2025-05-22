@@ -1,10 +1,10 @@
 #ifndef MEMBER_H
 #define MEMBER_H
 
-#include "User.h"
-#include "BicycleCollection.h"
 #include <map>
 #include <vector>
+#include "BicycleCollection.h"
+#include "User.h"
 
 class Member : public User {
 private:

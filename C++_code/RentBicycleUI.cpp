@@ -1,7 +1,6 @@
-#include "RentBicycleUI.h"
-#include "RentBicycle.h"
 #include <iostream>
-#include <fstream>
+#include "RentBicycle.h"
+#include "RentBicycleUI.h"
 
 /*
 	함수 이름 : RentBicycleUI::startInterface()

@@ -1,9 +1,9 @@
 #ifndef REGISTER_BICYCLE_H
 #define REGISTER_BICYCLE_H
 
-#include "Bicycle.h"
-#include "User.h"
+#include <map>
 #include <string>
+#include "Bicycle.h"
 
 class RegisterBicycle {
 public:

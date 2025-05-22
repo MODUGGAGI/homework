@@ -1,10 +1,10 @@
 #ifndef RENT_BICYCLE_UI_H
 #define RENT_BICYCLE_UI_H
 
+#include <fstream>
 #include <string>
-#include "User.h"
-#include "Member.h"
 #include "Bicycle.h"
+#include "Member.h"
 
 // 전방 선언
 class RentBicycle;

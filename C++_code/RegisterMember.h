@@ -1,8 +1,9 @@
 #ifndef REGISTER_MEMBER_H
 #define REGISTER_MEMBER_H
 
-#include "Member.h"
+#include <map>
 #include <string>
+#include "Member.h"
 
 // 전방 선언
 class RegisterMemberUI;

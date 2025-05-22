@@ -1,8 +1,8 @@
 #ifndef VIEW_RENTAL_INFO_H
 #define VIEW_RENTAL_INFO_H
 
-#include "Member.h"
 #include <map>
+#include <vector>
 #include "Bicycle.h"
 #include "Member.h"
 
