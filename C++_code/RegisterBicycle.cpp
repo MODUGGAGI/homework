@@ -19,7 +19,7 @@ RegisterBicycle::RegisterBicycle(Bicycle* bicycleList[], int& bicycleCount) {
 	함수 이름 : RegisterBicycle::registerNewBicycle()
 	기능	  : 새로운 자전거를 생성하고 자전거 목록에 추가
 	전달 인자 : bicycleId -> 자전거 ID, name -> 자전거 이름, bicycleList -> 자전거 목록, bicycleCount -> 자전거 수
-	반환값    : 없음
+	반환값    : std::map<std::string, std::string> -> 등록한 자전거의 Details를 담고 있는 Map
 */
 std::map<std::string, std::string> RegisterBicycle::registerNewBicycle(const std::string& bicycleId, const std::string& name,
                                          Bicycle* bicycleList[], int& bicycleCount) {

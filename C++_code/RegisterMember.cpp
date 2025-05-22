@@ -19,7 +19,7 @@ RegisterMember::RegisterMember(User* userList[], int& userCount) {
 	함수 이름 : RegisterMember::registerNewMember()
 	기능	  : 새로운 회원을 생성하고 사용자 목록에 추가
 	전달 인자 : id -> 사용자 ID, password -> 비밀번호, phoneNumber -> 전화번호, userList -> 사용자 목록, userCount -> 사용자 수
-	반환값    : 없음
+	반환값    : std::map<std::string, std::string> -> Member의 Details 정보를 담은 Map
 */
 std::map<std::string, std::string> RegisterMember::registerNewMember(const std::string &id, const std::string &password, const std::string &phoneNumber,
                                        User *userList[], int &userCount) {
