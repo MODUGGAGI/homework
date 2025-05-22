@@ -1,7 +1,7 @@
 #include "Member.h"
 
 /*
-	함수 이름 : Member::Member(const std::string& id, const std::string& pw, const std::string& phoneNum)
+	함수 이름 : Member::Member()
 	기능	  : Member 클래스의 매개변수 생성자로 사용자 ID, 비밀번호, 전화번호를 초기화
 	전달 인자 : id -> Member ID, pw -> 비밀번호, phoneNum -> 전화번호
 	반환값    : 없음
@@ -24,7 +24,7 @@ std::map<std::string, std::string> Member::getUserDetails() const {
 }
 
 /*
-	함수 이름 : Member::rentBicycle(const Bicycle& Bicycle)
+	함수 이름 : Member::rentBicycle()
 	기능	  : 자전거를 대여하여 Member의 자전거 컬렉션에 추가
 	전달 인자 : Bicycle -> 대여할 자전거 객체
 	반환값    : 없음

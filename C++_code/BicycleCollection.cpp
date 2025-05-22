@@ -1,7 +1,7 @@
 #include "BicycleCollection.h"
 
 /*
-	함수 이름 : BicycleCollection::addBicycle(const Bicycle& bicycle)
+	함수 이름 : BicycleCollection::addBicycle()
 	기능	  : 자전거 컬렉션에 새로운 자전거를 추가
 	전달 인자 : bicycle -> 추가할 자전거 객체
 	반환값    : 없음
