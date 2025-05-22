@@ -7,11 +7,11 @@
 
 class RegisterBicycle {
 public:
-    // ✅ 생성자 추가
-    RegisterBicycle(Bicycle* bicycleList[], int& bicycleCount, User* currentUser);
+    // RegisterBicycle 클래스의 생성자로 UI를 통해 자전거 등록 프로세스를 시작
+    RegisterBicycle(Bicycle* bicycleList[], int& bicycleCount);
 
-    // 기존 메서드 유지
-    void registerNewBicycle(const std::string& bicycleId, const std::string& name,
+    // 새로운 자전거를 생성하고 자전거 목록에 추가
+    std::map<std::string, std::string> registerNewBicycle(const std::string& bicycleId, const std::string& name,
                             Bicycle* bicycleList[], int& bicycleCount);
 };
 
