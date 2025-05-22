@@ -14,7 +14,7 @@ class LoginUI {
 public:
     // 로그인 UI 인터페이스를 시작하고 사용자 입력을 받아 처리
     void startInterface(Login* control, User* userList[], int userCount, User*& currentUser);
-    // 로그인 처리를 위한 UI 함수
+    // 로그인 처리를 위한 UI 함수, 로그인 처리 후 로그인 결과 출력
     void login(Login* control, const std::string& id, const std::string& password, User* userList[], int userCount, User*& currentUser);
 };
 
