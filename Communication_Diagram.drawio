@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.2.15 Chrome/134.0.6998.205 Electron/35.2.1 Safari/537.36" version="26.2.15">
   <diagram name="페이지-1" id="n28g4y-OUyf410SFKT3C">
-    <mxGraphModel dx="1018" dy="777" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="700" math="0" shadow="0">
+    <mxGraphModel dx="939" dy="642" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="700" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -97,7 +97,7 @@
             <mxPoint x="655.01" y="102.33000000000001" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="VfWwHx3MwapYfcLZFJRd-23" value="2.1.2: getMemberDetails()" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+        <mxCell id="VfWwHx3MwapYfcLZFJRd-23" value="2.1.2: getUserDetails()" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="535.01" y="68" width="189" height="30" as="geometry" />
         </mxCell>
         <mxCell id="VfWwHx3MwapYfcLZFJRd-24" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -332,7 +332,7 @@
           <mxGeometry x="531" y="1014.085" width="146" height="30" as="geometry" />
         </mxCell>
         <mxCell id="VfWwHx3MwapYfcLZFJRd-98" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="15.01" y="1415.64" width="780" height="310" as="geometry" />
+          <mxGeometry x="15.01" y="1415.64" width="954.99" height="310" as="geometry" />
         </mxCell>
         <mxCell id="VfWwHx3MwapYfcLZFJRd-99" value=":Member" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
           <mxGeometry x="65.01" y="1495.6350000000002" width="30" height="60" as="geometry" />
@@ -431,7 +431,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="VfWwHx3MwapYfcLZFJRd-121" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="15.02" y="1751.085" width="790" height="310" as="geometry" />
+          <mxGeometry x="15.02" y="1751.09" width="954.98" height="310" as="geometry" />
         </mxCell>
         <mxCell id="VfWwHx3MwapYfcLZFJRd-122" value=":Member" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
           <mxGeometry x="65.02000000000001" y="1831.085" width="30" height="60" as="geometry" />
@@ -509,6 +509,42 @@
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="569.02" y="1843.415" as="sourcePoint" />
             <mxPoint x="635.02" y="1843.415" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xVS-xDmeKptRzCz1LeUS-1" value=":BicycleCollection" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="780.01" y="1655.64" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="xVS-xDmeKptRzCz1LeUS-3" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="VfWwHx3MwapYfcLZFJRd-104" target="xVS-xDmeKptRzCz1LeUS-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="673.02" y="1675.6400000000003" as="sourcePoint" />
+            <mxPoint x="725.01" y="1536" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xVS-xDmeKptRzCz1LeUS-4" value="2.1.1.1: addBicycle()" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="633.52" y="1630.0000000000002" width="143" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xVS-xDmeKptRzCz1LeUS-5" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="667.01" y="1665.9950000000003" as="sourcePoint" />
+            <mxPoint x="733.01" y="1665.9950000000003" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xVS-xDmeKptRzCz1LeUS-6" value=":BicycleCollection" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="750.02" y="1994.9900000000002" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="xVS-xDmeKptRzCz1LeUS-7" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="VfWwHx3MwapYfcLZFJRd-138" target="xVS-xDmeKptRzCz1LeUS-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="603.02" y="2016" as="sourcePoint" />
+            <mxPoint x="750.02" y="2016" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xVS-xDmeKptRzCz1LeUS-8" value="1.1: getAllBicyclePointers()" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="603.54" y="1970" width="156.46" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xVS-xDmeKptRzCz1LeUS-9" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="637.03" y="2005.9950000000003" as="sourcePoint" />
+            <mxPoint x="703.03" y="2005.9950000000003" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
