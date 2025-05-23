@@ -27,15 +27,13 @@ RentBicycle::RentBicycle(Bicycle* bicycleList[], int bicycleCount, User* current
 std::map<std::string, std::string> RentBicycle::rentBicycle(const std::string& bicycleId, Bicycle* bicycleList[], int bicycleCount, Member* currentUser) {
     // 자전거 목록에서 ID를 이용하여 자전거 찾기
     for (int i = 0; i < bicycleCount; i++) {
-        // 자전거의 정보를 가져와서 map에 담아둔다.
-        auto map = bicycleList[i]->getBicycleDetails();
 
-        if (map["bicycleId"] == bicycleId) { //ID값 비교
+        if (bicycleList[i]->getBicycleId() == bicycleId) { //ID값 비교
             // 자전거를 찾았으면 멤버의 rentBicycle 메서드 호출해서 대여
             currentUser->rentBicycle(*bicycleList[i]);
 
             // 대여한 자전거의 세부 정보를 담고 있는 map 반환
-            return map;
+            return bicycleList[i]->getBicycleDetails();;
         }
     }
 

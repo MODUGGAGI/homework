@@ -21,3 +21,13 @@ std::map<std::string, std::string> Bicycle::getBicycleDetails() const {
             {"name", name}
     };
 }
+
+/*
+	함수 이름 : Bicycle::getBicycleId()
+	기능	  : 자전거의 ID를 반환
+	전달 인자 : 없음
+	반환값    : string -> 자전거 ID
+*/
+std::string Bicycle::getBicycleId() const {
+    return bicycleId;
+}
