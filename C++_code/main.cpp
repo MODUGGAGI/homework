@@ -1,15 +1,16 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include "User.h"               // User 클래스 추가
-#include "Bicycle.h"            // Bicycle 클래스 추가
-#include "Admin.h"              // Admin 클래스 추가
+#include "User.h"             // User 클래스 추가
+#include "Bicycle.h"          // Bicycle 클래스 추가
+#include "Admin.h"            // Admin 클래스 추가
 #include "RegisterMember.h"   // RegisterMember 클래스 추가
 #include "Login.h"            // Login 클래스 추가
 #include "Logout.h"           // Logout 클래스 추가
 #include "RegisterBicycle.h"  // RegisterBicycle 클래스 추가
 #include "RentBicycle.h"      // RentBicycle 클래스 추가
 #include "ViewRentalInfo.h"   // ViewRentalInfo 클래스 추가
+#include "Exit.h"             // Exit 클래스 추가
 
 using namespace std;
 
@@ -119,7 +120,7 @@ void doTask() {
                 switch (menu_level_2) {
                     case 1: {
                         // 6.1 종료
-                        is_program_exit = program_exit();
+                        Exit exitControlClass(is_program_exit);
                         break;
                     }
                 }
