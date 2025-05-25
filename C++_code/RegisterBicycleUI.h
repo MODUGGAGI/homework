@@ -1,4 +1,4 @@
-#ifndef REGISTER_BICYCLE_UI_H
+﻿#ifndef REGISTER_BICYCLE_UI_H
 #define REGISTER_BICYCLE_UI_H
 
 #include <fstream>

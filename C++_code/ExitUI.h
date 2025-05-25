@@ -1,4 +1,4 @@
-#ifndef EXIT_UI_H
+﻿#ifndef EXIT_UI_H
 #define EXIT_UI_H
 
 #include <fstream>

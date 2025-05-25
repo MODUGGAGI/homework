@@ -1,4 +1,4 @@
-#ifndef REGISTER_MEMBER_UI_H
+﻿#ifndef REGISTER_MEMBER_UI_H
 #define REGISTER_MEMBER_UI_H
 
 #include <fstream>

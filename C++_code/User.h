@@ -1,4 +1,4 @@
-#ifndef C__CODE_USER_H
+﻿#ifndef C__CODE_USER_H
 #define C__CODE_USER_H
 
 #include <map>

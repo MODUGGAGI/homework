@@ -1,4 +1,4 @@
-#ifndef LOGOUT_UI_H
+﻿#ifndef LOGOUT_UI_H
 #define LOGOUT_UI_H
 
 #include <fstream>

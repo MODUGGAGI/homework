@@ -1,4 +1,4 @@
-#ifndef VIEW_RENTAL_INFO_H
+﻿#ifndef VIEW_RENTAL_INFO_H
 #define VIEW_RENTAL_INFO_H
 
 #include <map>

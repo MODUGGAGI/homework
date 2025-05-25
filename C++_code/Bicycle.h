@@ -1,4 +1,4 @@
-#ifndef BICYCLE_H
+﻿#ifndef BICYCLE_H
 #define BICYCLE_H
 
 #include <map>

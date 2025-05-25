@@ -1,4 +1,4 @@
-#ifndef REGISTER_BICYCLE_H
+﻿#ifndef REGISTER_BICYCLE_H
 #define REGISTER_BICYCLE_H
 
 #include <map>

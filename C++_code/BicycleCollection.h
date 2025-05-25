@@ -1,4 +1,4 @@
-#ifndef BICYCLE_COLLECTION_H
+﻿#ifndef BICYCLE_COLLECTION_H
 #define BICYCLE_COLLECTION_H
 
 #include <vector>

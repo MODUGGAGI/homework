@@ -1,4 +1,4 @@
-#include "Member.h"
+﻿#include "Member.h"
 
 /*
 	함수 이름 : Member::Member()

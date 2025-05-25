@@ -1,4 +1,4 @@
-#include "Admin.h"
+﻿#include "Admin.h"
 
 /*
 	함수 이름 : Admin::Admin()

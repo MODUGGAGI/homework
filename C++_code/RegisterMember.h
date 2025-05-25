@@ -1,4 +1,4 @@
-#ifndef REGISTER_MEMBER_H
+﻿#ifndef REGISTER_MEMBER_H
 #define REGISTER_MEMBER_H
 
 #include <map>
